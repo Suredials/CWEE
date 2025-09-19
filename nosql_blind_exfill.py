@@ -3,7 +3,7 @@ import json
 
 def oracle(t):
     r = requests.post(
-        "http://attacker.com/index.php",
+        "http://victim.com/index.php",
         headers = {"Content-Type": "application/json"},
         data = json.dumps({"trackingNum": t})
     )
